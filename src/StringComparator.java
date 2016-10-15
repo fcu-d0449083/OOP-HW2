@@ -1,19 +1,26 @@
 import java.util.Scanner;
 
-class StringComparator {
+public class StringComparator {
 
 	public static void main(String[] args) {
-		 Scanner scannerObject = new Scanner(System.in);
-		  int flag;
-		  String str1=scannerObject.next();
-		  String str2=scannerObject.next();
-		  flag = str1.compareTo(str2);
-		  if (flag == 0){
-		   System.out.println(" The two strings are the same.");
-		   }
-		  else{
-		   System.out.println("The two strings are not the same.= ");
-		   }
+		// TODO Auto-generated method stub
+		int i=0;
+		while (i==0) {
+			
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter two strings");
+		String str1 = scanner.next();
+		String str2 = scanner.next();
+		
+		if(str1.equalsIgnoreCase(str2)){
+			System.out.println("The two strings are the same.");
+			i+=1;
+		}
+		else{
+			System.out.println("The two strings are not the same.");
+			
+		}
+			
 	}
-
+	}
 }
